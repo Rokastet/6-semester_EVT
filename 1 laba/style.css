@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'prestige';
-    src: url('fonts/prestige/GreatVibes-Regular.ttf-Regular.ttf') format("truetype");
+    src: url('fonts/prestige/GreatVibes-Regular.ttf') format("truetype");
       }
 
 
@@ -76,13 +76,22 @@ h1{
 }
 
 .prestige{
-    font-family: "prestige", regular;
+    font-family: "prestige";
 }
 
 .inception{
-    font-family: "begin", sans-serif;
+    font-family: "begin";
 }
 
 .intestellar p{
-    font-family: "intestellar", sans-serif;
+    font-family: "intestellar";
+}
+
+.about{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: solid;
 }

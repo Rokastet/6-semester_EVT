@@ -1,0 +1,191 @@
+html {
+    font-family: sans-serif;
+  }
+
+@keyframes shake{
+
+  0%{
+    transform: translate(0,0) rotate(0deg);
+  }
+
+  25%{
+    transform: translate(10px,10px) rotate(7deg);
+  }
+
+  50%{
+    transform: translate(0,0) rotate(0deg);
+  }
+
+  75%{
+    transform: translate(-10px,-10px) rotate(-7deg);
+  }
+
+  100%{
+    transform: translate(0,0) rotate(0deg);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  animation: shake 1s infinite;
+}
+
+a {
+  font-size: 20px;
+  text-decoration:none;
+  position:relative;
+  color: black;
+  }
+
+ button:hover {
+  margin: 50px;
+  font-size: 20px;
+  background-color: green;
+  animation: none;
+}
+
+a:before{
+  position:absolute;
+  bottom: -10px;
+  content: " ";
+  border-bottom: 2px solid #ccc;
+  left:50%;
+  width:0%;
+  transition: all 0.3s;
+}
+
+a:hover:before{
+  width:100%;
+  left:0%
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #ff6347;
+  border-radius: 50%;
+  position: relative;
+  animation: fallen-down 3s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+}
+
+@keyframes fallen-down{
+0%{
+  transform: translateY(0px);
+}
+18%{
+  transform: translateY(400px);
+}
+34%{
+  transform: translateY(250px);
+}
+43%{
+  transform: translateY(400px);
+}
+65%{
+  transform: translateY(325px);
+}
+75%{
+  transform: translateY(400px);
+}
+90%{
+  transform: translateY(360px);
+}
+100%{
+  transform: translateY(400px);
+}
+
+}
+
+.colid{
+  margin-top: 400px;
+  width: 100%;
+  border-bottom: 2px solid red;
+}
+
+.nuton {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center; 
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+  }
+
+.balls{
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: aquamarine;
+  border: black 1px solid;
+}
+
+.thread {
+  height: 40px;
+  width: 1px;
+  background-color: black;
+}
+
+@keyframes begin {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes end {
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-45deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.first {
+  animation: begin 1.3s infinite;
+  transform-origin: top center;
+}
+
+.last {
+  animation: end 1.3s infinite;
+  transform-origin: top center;
+}
+
+
