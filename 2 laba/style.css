@@ -84,7 +84,8 @@ a:hover:before{
   background-color: #ff6347;
   border-radius: 50%;
   position: relative;
-  animation: fallen-down 3s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+  animation: fallen-down 3s cubic-bezier(0.28, 0.84, 0.42, 1) 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fallen-down{
