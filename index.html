@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Стили для навигационного меню */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 35px;
+        }
+
+        /* Стили для ссылок */
+        nav a {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #d5d5ec;
+            background-color: #5a0275; 
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Эффект наведения на ссылки */
+        nav a:hover {
+            background-color: #c99c23; /* Темнее при наведении */
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li><link rel="stylesheet" href="1 laba\index.html"></li>
-        <li><link rel="stylesheet" href="2 laba\6_lab_EVT.html"></li>
-    </ul>
+   
+<nav>
+    <a href="1 laba\index.html"> 5 лаба</a>
+    <a href="2 laba\6_lab_EVT.html"> 6 лаба</a>
+</nav>
+
 </body>
 </html>
