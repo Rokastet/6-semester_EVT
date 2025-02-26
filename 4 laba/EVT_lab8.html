@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <title>grid</title>
+</head>
+<body>
+    <header>
+        <h1>Изучаем grid</h1>
+    </header>
+    <div class="grid">
+        <article>
+            <h2>1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.</p>
+        </article>
+        <article>
+            <h2>2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.</p>
+        </article>
+        <article>
+            <h2>4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>5</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>6</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>7</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>8</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+        <article>
+            <h2>9</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.</p>
+        </article>
+        <article>
+            <h2>10</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio maxime incidunt perferendis molestiae impedit molestias, harum obcaecati sequi, quae similique sapiente ea quibusdam cum rerum, sit error iure nihil adipisci.
+            </p>
+        </article>
+    </div>   
+       <section class="adds-exrice">
+            <div class="header-add"><h2>Допки</h2></div>
+            
+            <div class="grid-container">
+            <h3>grid-template-columns</h3>
+            <div class="flex-menu">
+                <div class="flex-menu__element flex-menu__element--active">100px 50px 100px</div>
+                <div class="flex-menu__element">50px 1fr 50px</div>
+                <div class="flex-menu__element">repeat(3,80px)</div>
+            </div>
+            <div class="grid-template-colums">
+                <div class="example">
+                    <div class="view">
+                    <div class="parent" id="colums">
+                        <div class="child">1</div>
+                        <div class="child">2</div>
+                        <div class="child">3</div>
+                        <div class="child">4</div>
+                        <div class="child">5</div>
+                        <div class="child">6</div>
+                        <div class="child">7</div>
+                        <div class="child">8</div>
+                        <div class="child">9</div>
+                    </div>
+                    <div class="css">
+                        <pre id="css-colums">
+.parent {
+display: grid;
+<mark>grid-template-columns: 100px 50px 100px;</mark>
+}
+                        </pre>
+                    </div>
+                    </div>
+                    <div class="explanation">
+                        <p>CSS-свойство grid-template-columns определяет имена линий и размеры grid-колонок. </p>
+
+                        <p><strong>Применяется ко:</strong> всем элементам.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="grid-container">
+                <h3>grid-template-rows</h3>
+                <div class="flex-menu">
+                    <div class="flex-menu__element flex-menu__element--active">80px 50px 80px</div>
+                    <div class="flex-menu__element">50px 1fr 50px</div>
+                    <div class="flex-menu__element">repeat(3,60px)</div>
+                </div>
+                <div class="grid-template-rows">
+                    <div class="example">
+                        <div class="view">
+                        <div class="parent" id="rows">
+                            <div class="child">1</div>
+                            <div class="child">2</div>
+                            <div class="child">3</div>
+                            <div class="child">4</div>
+                            <div class="child">5</div>
+                            <div class="child">6</div>
+                            <div class="child">7</div>
+                            <div class="child">8</div>
+                            <div class="child">9</div>
+                        </div>
+                        <div class="css">
+                            <pre id="css-rows">
+.parent {
+display: grid;
+<mark>grid-template-rows: 80px 50px 80px;</mark>
+}
+                            </pre>
+                        </div>
+                        </div>
+                        <div class="explanation">
+                            <p>CSS-свойство grid-template-rows определяет имена линий и размеры полос grid-рядов.</p>
+
+                            <p><strong>Применяется ко:</strong> всем элементам.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="grid-container">
+                    <h3>grid-auto-flow</h3>
+                    <div class="flex-menu">
+                        <div class="flex-menu__element flex-menu__element--active">ROW</div>
+                        <div class="flex-menu__element">COLUMN</div>
+                        <div class="flex-menu__element">DENSE</div>
+                    </div>
+                    <div class="grid-auto-flow">
+                        <div class="example">
+                            <div class="view">
+                            <div class="parent" id="flow">
+                                <div class="child">1</div>
+                                <div class="child">2</div>
+                                <div class="child">3</div>
+                                <div class="child">4</div>
+                                <div class="child">5</div>
+                                <div class="child">6</div>
+                                <div class="child">7</div>
+                                <div class="child">8</div>
+                                <div class="child">9</div>
+                            </div>
+                            <div class="css">
+                                <pre id="css-flow">
+.parent {
+display: grid;
+<mark>grid-auto-flow: row;</mark>
+}
+                                </pre>
+                            </div>
+                            </div>
+                            <div class="explanation">
+                                    <p>Свойство grid-auto-flow управляет тем, как работает алгоритм автоматического размещения, точно указывая, как элементы попадают в сетку. </p>
+                                    <p><b>Наследуется:</b> нет.</p>
+                                    <p><b>Применяется к:</b> grid контейнерам.</p>
+                                    <p><b>Значение по умолчанию:</b> row.</p>
+                                    <p><b>row</b></p>
+                                    <p>Алгоритм размещает элементы, заполняя каждую строку поочередно, добавляя новые строки по мере необходимости.</p>
+                                    <p><b>column</b></p>
+                                    <p>Алгоритм помещает элементы, заполняя каждый столбец поочередно, добавляя по мере необходимости новые столбцы.</p>
+                                    <p><b>dense</b></p>
+                                    <p>алгоритм использует «плотный» алгоритм упаковки, который пытается заполнить дыры в сетке, если позже появятся более мелкие элементы. </p>
+                                    <p>Это может привести к тому, что элементы появятся не по порядку, но при этом заполнят отверстия, оставленные более крупными элементами.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+       </section>
+       <script src="script.js"></script>
+</body>
+</html>

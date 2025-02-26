@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Flex</title>
+</head>
+<body>
+    <header>
+        <h1>Изучаем flexbox</h1>
+    </header>
+    <div class="all">
+        <div class="first">
+        <article>
+        <h2>1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+        </p>
+    </article>
+    <article>
+        <h2>2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+        </p>
+    </article>
+    <article>
+        <h2>3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+        </p>
+    </article>
+        </div>
+
+        <div class="fourth">
+            <div class="second">
+                <article>
+                    <h2>4</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                <article>
+                    <h2>5</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                <article>
+                    <h2>6</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+            </div>
+
+            <div class="third">
+                <article>
+                    <h2>7</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article><article>
+                    <h2>8</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article><article>
+                    <h2>9</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article><article>
+                    <h2>10</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>    
+
+    
+    <div class="dopolnitelno"><h2>Add task</h2></div>
+    <section class="adds">
+
+<div class="flex-guide">
+        <h3>order</h3>
+        <div class="flex-menu">
+            <div class="flex-menu__element">-1</div>
+            <div class="flex-menu__element flex-menu__element--active">0</div>
+            <div class="flex-menu__element">1</div>
+        </div>
+    <div class="html_order">
+    <div class="example">
+        <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child child-active" id="child-order">3</div>
+        <div class="child">4</div>
+    </div>
+    </div>
+
+    <div class="css">
+<pre id="order">
+.parent {
+display: flex;
+align-items: flex-start;
+height: 100%;
+}
+.child-active {
+<mark>order: 0;</mark>
+}
+</pre>
+    </div>
+    </div>
+    <div class="explanation">
+        <p>Свойство order определяет порядок вывода флексов внутри флекс-контейнера. Элементы располагаются согласно значениям свойства order от меньшего к большему. При равных значениях order элементы выводятся в том порядке, в каком они появляются в исходном коде.</p>
+
+            <p><strong>Применяется к:</strong> flex элементам.</p>
+            
+            <p><strong>Значение по умолчанию:</strong> 0.</p>
+    </div>
+</div>
+
+<div class="flex-guide">
+    <h3>aligh-self</h3>
+    <div class="flex-menu">
+        <div class="flex-menu__element flex-menu__element--active">FLEX-START</div>
+        <div class="flex-menu__element">FLEX-END</div>
+        <div class="flex-menu__element">CENTER</div>
+        <div class="flex-menu__element">BASELINE</div>
+        <div class="flex-menu__element">STRETCH</div>
+    </div>
+    <div class="html_aligh-self">
+    <div class="example">
+        <div class="parent">    
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child child-active" id="child-align-self">3</div>
+            <div class="child">4</div>
+        </div>
+    </div>
+
+    <div class="css">
+<pre id="align-self">
+.parent {
+display: flex;
+height: 100%;
+}
+.child-active {
+<mark>align-self: flex-start;</mark>
+ }
+</pre>
+    </div>
+ 
+ 
+</div>
+<div class="explanation">
+    <p>Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.</p>
+
+    <p><strong>Применяется кo:</strong> flex элементам.</p>
+    
+    <p><strong>Значение по умолчанию:</strong> auto.</p>
+    <p>
+    flex-start
+    Элемент выравнивается в начале поперечной оси контейнера.
+    flex-end
+    Элемент выравнивается в конце поперечной оси контейнера.
+    center
+    Элемент выравнивается по центральной линии на поперечной оси.
+    baseline
+    Элемент выравнивается по базовой линии текста.
+    Stretch
+    Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.</p></div>
+
+   </div>
+
+<div class="flex-guide">
+    <h3>flex-grow</h3>
+    <div class="flex-menu">
+        <div class="flex-menu__element flex-menu__element--active">0</div>
+        <div class="flex-menu__element">1</div>
+      </div>
+    <div class="html_flex-grow">
+    <div class="example">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child child-active" id="child-grow">3</div>
+            <div class="child">4</div>
+        </div>
+    </div>
+    
+    <div class="css">
+    <pre id="flex-grow">
+.parent {
+display: flex;
+height: 100%;
+}
+.child-active {
+<mark>flex-grow: 0;</mark>
+}
+    </pre>
+    </div>
+    
+
+</div>
+<div class="explanation">
+    <p>Свойство flex-grow задает коэффициент роста flex для заданного числа. Отрицательное значение не валидно.</p>
+
+        <p><strong>Применяется к:</strong> flex элементам.</p>
+        
+        <p><strong>Значение по умолчанию:</strong> 0.</p>
+    </div>
+</div>
+</div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
