@@ -1,4 +1,4 @@
-#Романов Константин №210901
+# Романов Константин №210901
 
 **Номер работы**| **Выполнена**
 ----------------|:-------: 
@@ -10,12 +10,12 @@
 10 лаба         |   *+*
 11 лаба         |   *-*
 
-[https://rokastet.github.io/6-semester_EVT/](Link to deploy)
+[Link to deploy](https://rokastet.github.io/6-semester_EVT/)
 
 ![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmY0NjRzdHF0c2VybnJhc3dmeXUzdWdmcHllYzgzbzFqdTlmNGRodSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k0ijJhqrUP4T2EvmJ1/giphy.gif)
 
 
-###Example 1: Area When Base and Height is Known
+### Example 1: Area When Base and Height is Known
 
 ```
 const baseValue = prompt('Enter the base of a triangle: ');
@@ -37,7 +37,7 @@ Enter the height of a triangle: 6
 The area of the triangle is 12
 ```
 
-##Что мы изучали
+## Что мы изучали
 
 * В 5 лабораторной
     + Сделали простой сайт с любимыми кинофильмами
