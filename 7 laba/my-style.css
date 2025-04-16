@@ -1,0 +1,105 @@
+.header{ 
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: aqua;
+    font-size: 2rem;
+    top: 0;
+}
+
+.footer{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    background-color: aqua;
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+article p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html body .wrapper .main .article img{
+    max-height: 100%;
+    min-height: 160px;
+}
+
+.footer a{
+    cursor: deafult !important;
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+#fot a:hover{
+    cursor: default !important;
+}
+
+html body .wrapper {
+    max-width: 100%;
+}
+
+.wrapper .main .article p{
+    font-style: normal;
+}
+
+.wrapper .main .article .aside blockquote{
+    font-style: italic;
+}
+
+html body .wrapper {
+    text-align: center;
+}
+
+html body .wrapper .word{
+    position: sticky;
+    top: 40px;
+    height: 30px;
+    width: 60px;
+}
+
+
+html body .wrapper .word.first{
+    left: 0px;
+    background-color: aqua;
+}
+
+html body .wrapper .word.second{
+    left: 65px;
+    background-color: aquamarine;
+}
+
+html body .wrapper .word.third{
+    left: 125px;
+    background-color: aqua;
+}
+
+html body .wrapper .word.fourth{
+    left: 185px;
+    background-color: aquamarine;
+}
+
+html body .wrapper .word.fifth{
+    left: 245px;
+    background-color: aqua;
+}  
+
+blockquote:last-child {
+    margin-bottom: 40px;
+}
+
+article.article:nth-of-type(odd) img {
+    float: left;
+  }
+  
+  article.article:nth-of-type(even) img {
+    float: right;
+  }
+
+  article h3 + img + p::first-letter {
+    font-size: 200%;
+    color: #d6336c;
+}
+
