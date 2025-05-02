@@ -8,7 +8,8 @@
 8 лаба          |   *+*
 9 лаба          |   *+*
 10 лаба         |   *+*
-11 лаба         |   *-*
+11 лаба         |   *+*
+12 лаба         |   *+*
 
 [Link to deploy](https://rokastet.github.io/6-semester_EVT/)
 
@@ -53,4 +54,6 @@ The area of the triangle is 12
     + Markdown
 * в 11 лабораторной 
     + Position
-
+* в 12 лабороторной
+    + Framework reveal.js для создания презентаций
+ 
